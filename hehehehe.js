@@ -9,7 +9,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === prefix + 'Hello') {
+  if (msg.content === 'Hello') {
     msg.reply('Hi 👋');
   }
 });
