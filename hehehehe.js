@@ -9,7 +9,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Hello') {
+  if (msg.content === 'hello') {
     msg.reply('Hi 👋');
   }
 });
@@ -21,11 +21,9 @@ client.on('message', msg => {
 //});
 
 
-const { Client, MessageEmbed } = require('discord.js');
- 
 client.on('message', message => {
   // If the message is "how to embed"
-  if (message.content === prefix + 'Help') {
+  if (message.content === prefix + 'help') {
     // We can create embeds using the MessageEmbed constructor
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
