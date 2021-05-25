@@ -1,0 +1,2 @@
+worker: node hehehehe.js
+
