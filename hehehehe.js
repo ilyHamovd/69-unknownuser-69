@@ -1,13 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const prefix = ["$"];
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Hello') {
+  if (msg.content === prefix + 'Hello') {
     msg.reply('Hi 👋');
   }
 });
@@ -23,7 +25,7 @@ const { Client, MessageEmbed } = require('discord.js');
  
 client.on('message', message => {
   // If the message is "how to embed"
-  if (message.content === 'Help') {
+  if (message.content === prefix + 'Help') {
     // We can create embeds using the MessageEmbed constructor
     // Read more about all that you can do with the constructor
     // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
@@ -37,7 +39,7 @@ client.on('message', message => {
     // Send the embed to the same channel as the message
     message.channel.send(embed);
   }
-    if (message.content === 'avatar') {
+    if (message.content === prefix + 'avatar') {
       const embed = new MessageEmbed()
       .setColor("#985ce7")
       .setAuthor(message.author.tag, message.author.displayAvatarURL())
@@ -47,7 +49,6 @@ client.on('message', message => {
       message.channel.send(embed);
     }
 });
-
 
 
 
