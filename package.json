@@ -2,9 +2,9 @@
   "name": "Test",
   "description": "Test",
   "version": "0.0.0",
-  "main": "perm.js",
+  "main": "hehehehe.js",
   "scripts": {
-    "start": "node perm.js"
+    "start": "node hehehehe.js"
   },
   "dependencies": {
     "discord.js": "11.1.0",
