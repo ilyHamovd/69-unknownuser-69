@@ -1,14 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const yt_api_key = "AIzaSyBl3MQUBNbcJXtjKcaUtWEisYi9K4pQqUU"; 
-const ms = require("ms");
-const { get } = require("snekfetch");
-const YouTube = require("simple-youtube-api");
-const youtube = new YouTube("AIzaSyBl3MQUBNbcJXtjKcaUtWEisYi9K4pQqUU");
-const fs = require("fs");
-const fetchVideoInfo = require("youtube-info");
-
 var prefix = "$";
 
 
